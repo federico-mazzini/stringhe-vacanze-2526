@@ -1,23 +1,25 @@
 # Compito vacanze di Natale
 Il compito è suddiviso in tre parti. Forkare il progetto, creando il proprio personale.
 
-
+- Parte 1 e 2: file 1_2_genTarga.cpp
+- Parte 3: file 3_classTarga.cpp
 
 
 # Parte 1 (comune a tutti)
 Scrivere un programma per la **generazione casuale di una targa** (es. ZT459QA).
-Il primo, secondo, sesto e settimo charattere sono sempre **char** in formato **minuscolo**.
+Il primo, secondo, sesto e settimo carattere sono sempre **char** in formato **MAIUSCOLO**.
 Il terzo, quarto e quinto carattere sono sempre **numeri** da 1 a 9.
 
 ### Regole per la generazione di ogni elemento della targa
-- **Elemento 1**: A partire da una stringa costante definita globalmente, lunga almeno 10 lettere, viene presa dalla quarta posizione della parola costante. la lettera deve essere una consonante. nel caso in cui sia una vocale gestire la casistica (prendere valore successivo, precedente, altro)
+- **Elemento 1**: Il primo elemento della targa viene definito estraendo il quarto elemento di una stringa (costante e definita globalmente) lunga almeno 10 caratteri. Il carattere deve essere una consonante. Nel caso in cui sia una vocale o un numero definire una strategia e giustificarla con un commento.
 
-- **Elemento 2**: viene generato un numero casuale e trasformato in lettera mediante codice ascii corrispondente (maiuscolo) . Utilizzare funzione chr(num_generato).
-La lettera deve essere una consonante. nel caso in cui sia una vocale gestire la casistica (prendere valore successivo, precedente o altro). Se il valore estratto corrisponde alla lettera precedente rigenerarlo.
+- **Elemento 2**: Il secondo elemento della targa viene definito a partire da un numero generato casualmente, trasformato in carattere mediante codice ascii corrispondente (utilizzare funzione `chr(num_generato)`). Il carattere deve essere maiuscolo (utilizzare funzione `toUpper(carattere)`).
+Il carattere deve essere una consonante. Nel caso in cui sia una vocale o un numero definire una strategia e giustificarla con un commento.
 
-- **Elementi 3,4,5**: numeri generati random mediante funzione apposita
+- **Elementi 3,4,5**: I successivi tre elementi (terzo, quarto e quinto) sono definiti come numeri casuali, generati tramite funzione apposita.
 
-- **Elementi 6,7**:viene generato un numero casuale, sempre e solo dispari. Il nnumero viene poi trasformato in lettera mediante codice ascii corrispondente (maiuscolo).  Le due lettere possono essere uguali. 
+- **Elementi 6,7**: Gli ultimi due elementi sono definiti a partire da un numero generato casualmente, trasformato in carattere mediante codice ascii corrispondente (utilizzare funzione `chr(num_generato)`). 
+I due caratteri devono essere maiuscoli, possono essere sia vocali che consonanti, e possono essere uguali.
 
 
 **Vincoli**: 
